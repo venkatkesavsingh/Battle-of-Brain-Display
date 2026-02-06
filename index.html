@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>King of Diamonds</title>
+  <link rel="stylesheet" href="./display.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <!-- SCREEN NOISE -->
+  <div class="noise"></div>
+
+    <div class="screen">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1 class="glitch">FINAL GAME</h1>
+      <p id="roundText">AWAITING NEXT ROUND</p>
+    </div>
+
+    <!-- BALANCE SCALE -->
+    <div class="scale-area">
+      <div class="scale-line"></div>
+      <div class="needle" id="needle"></div>
+    </div>
+  
+    <!-- TEAM CARDS (FOREVER) -->
+    <div class="team-bar" id="teamInfoPanel"></div>
+
+    <!-- AVERAGE BOX -->
+    <div class="calc-box" id="avgBox">
+      <div class="calc-label" id="avgLabel">AVERAGE</div>
+      <div class="calc-value" id="avgValue">--</div>
+    </div>
+
+    <!-- XVALUE BOX -->
+    <div class="calc-box" id="xBox">
+      <div class="calc-label" id="xCalcLabel">X VALUE = (AVG × 0.8)</div>
+      <div class="calc-value" id="xCalcValue">--</div>
+    </div>
+
+    <!-- RESULT TEXT -->
+    <div class="result-text" id="statusText">
+      SYSTEM STANDBY
+    </div>
+  </div>
+  <script type="module" src="./display.js"></script>
+</body>
+</html>
